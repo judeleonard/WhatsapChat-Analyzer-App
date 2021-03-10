@@ -1,6 +1,12 @@
 # WhatsAppChat Analyzer App
 ![App demo](https://github.com/judeleonard/WhatsapChat-Analyzer-App/blob/master/Demo/ezgif.com-video-to-gif.gif)
 ## Hey! There, Welcome To WhatsApp Chat Analyzer :sunglasses:
+[![GitHub issues](https://img.shields.io/github/issues/judeleonard/WhatsapChat-Analyzer-App)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/issues)
+[![GitHub license](https://img.shields.io/github/license/judeleonard/WhatsapChat-Analyzer-App)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/blob/master/LICENSE)
+
+[![GitHub stars](https://img.shields.io/github/stars/judeleonard/WhatsapChat-Analyzer-App)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/judeleonard/WhatsapChat-Analyzer-App)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/network)
+
 #### About the App
 This App analyzes WhatsApp group chat messages or individual chat, and obviously anyone with a WhatsApp account
 can make use of the app to analyze their chat.
