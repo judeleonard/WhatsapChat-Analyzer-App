@@ -251,13 +251,13 @@ st.sidebar.markdown(
 )
 
 
-#st.sidebar.markdown("[![lets connect](https://forthebadge.com/images/badges/Jesus-Saves.svg)](https://www.linkedin.com/in/jude-chukwuebuka-78ab38175/)")
-#st.sidebar.markdown("[![Twitter](https://forthebadge.com/images/badges/Jesus-Saves.svg)](https://www.twitter.com/JudeLeonard13/)")
+st.sidebar.markdown("[![lets connect](https://forthebadge.com/images/badges/Jesus-Saves.svg)](https://www.linkedin.com/in/jude-chukwuebuka-78ab38175/)")
+st.sidebar.markdown("[![Twitter](https://forthebadge.com/images/badges/Jesus-Saves.svg)](https://www.twitter.com/JudeLeonard13/)")
 
 
-st.sidebar.markdown("<a href="https://twitter.com/GiftOjeabulu_">
-  <img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />
-</a>&nbsp;&nbsp;")
+#st.sidebar.markdown("<a href="https://twitter.com/GiftOjeabulu_">
+#  <img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />
+#</a>&nbsp;&nbsp;")
 
 '''
 <a href="https://twitter.com/GiftOjeabulu_">
