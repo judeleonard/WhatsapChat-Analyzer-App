@@ -23,7 +23,7 @@ Let me briefly walk you through on how to export your chat file.
 - Go to __"More"__ and make sure to export without media in a text format. 
 - Thats it! Your file is ready for analysis. :wink:
 
-## ✅ Insights Derived From App
+## ✅ Insights
 The insights derived from your chat data can be done for both group wise and individual wise. such as; __total letter count__, __word count__, 
 __total messages sent to the group__, __total emojis__ and __total media sent to the group__ and as well for individual wise.
 When a person is mostly available for chat by __date stat, time stat, weekday stat and time series messages (messages sent as time move on)__
