@@ -1,5 +1,10 @@
 # WhatsAppChat Analyzer App
+![header](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=300&section=header&text=WhatsAppChat%20Analyzer&fontSize=60)
+
+
 ![App demo](https://github.com/judeleonard/WhatsapChat-Analyzer-App/blob/master/Demo/ezgif.com-video-to-gif.gif)
+
+
 ## Hey! There, Welcome To WhatsApp Chat Analyzer :sunglasses:
 [![GitHub issues](https://img.shields.io/github/issues/judeleonard/WhatsapChat-Analyzer-App)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/issues)
 [![GitHub license](https://img.shields.io/github/license/judeleonard/WhatsapChat-Analyzer-App)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/blob/master/LICENSE)
