@@ -33,10 +33,10 @@ When a person is mostly available for chat by __date stat, time stat, weekday st
 You can also analyse for the most used word or emoji in a chart distribution, in the group or by an individual and the most active person in the group.
 
 ## ✅ Tech stack!
-	* Python
+	* Wordcloud
     * Streamlit
     * Plotly
-    * Javascript
-    * Firebase
+    * Matplotlib
+    * Pandas
 
 [FIND THE APP HERE](https://share.streamlit.io/gift-ojeabulu/whatsapchat-analyzer-app/app.py)
