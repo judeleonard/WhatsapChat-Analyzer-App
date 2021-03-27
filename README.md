@@ -7,7 +7,7 @@
 
 
 ![App demo](https://github.com/judeleonard/WhatsapChat-Analyzer-App/blob/master/Demo/ezgif.com-video-to-gif.gif)
-* [PROJECT ON LINKEDIN](https://www.linkedin.com/posts/gift-ojabu_covid19awareness-webappdevelopment-datascience-activity-6762296972004073473-cz47)
+* [PROJECT ON LINKEDIN](https://www.linkedin.com/posts/jude-ndu-78ab38175_i-developed-a-web-app-that-takes-input-of-activity-6774706251927486464-2umW)
 * [LIVE WEB APPLICATION](https://share.streamlit.io/gift-ojeabulu/whatsapchat-analyzer-app/app.py)
 
 
