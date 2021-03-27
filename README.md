@@ -3,7 +3,6 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/gift-ojeabulu/whatsapchat-analyzer-app/app.py)
 
---
 ![header](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=300&section=header&text=WhatsAppChat%20Analyzer&fontSize=60)
 
 
