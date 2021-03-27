@@ -1,7 +1,9 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/gift-ojeabulu/aviation-tweets-sentiment-analysis/main/app.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/gift-ojeabulu/whatsapchat-analyzer-app/app.py)
+
+--
 ![header](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=300&section=header&text=WhatsAppChat%20Analyzer&fontSize=60)
 
 
