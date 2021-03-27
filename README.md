@@ -1,4 +1,4 @@
-WhatsAppChat Analyzer App
+
 ![header](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=300&section=header&text=WhatsAppChat%20Analyzer&fontSize=60)
 
 
