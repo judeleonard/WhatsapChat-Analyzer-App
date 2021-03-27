@@ -36,4 +36,3 @@ You can also analyse for the most used word or emoji in a chart distribution, in
     * Matplotlib
     * Pandas
 
-[FIND THE APP HERE](https://share.streamlit.io/gift-ojeabulu/whatsapchat-analyzer-app/app.py)
