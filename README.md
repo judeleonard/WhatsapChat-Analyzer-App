@@ -1,5 +1,5 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-
+   
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/gift-ojeabulu/whatsapchat-analyzer-app/app.py)
 
@@ -10,7 +10,9 @@
 * [PROJECT ON LINKEDIN](https://www.linkedin.com/posts/jude-ndu-78ab38175_i-developed-a-web-app-that-takes-input-of-activity-6774706251927486464-2umW)
 * [LIVE WEB APPLICATION](https://share.streamlit.io/gift-ojeabulu/whatsapchat-analyzer-app/app.py)
 
+[![GitHub issues](https://img.shields.io/github/issues/judeleonard/WhatsapChat-Analyzer-App?style=for-the-badge)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/issues)    [![GitHub forks](https://img.shields.io/github/forks/judeleonard/WhatsapChat-Analyzer-App?style=for-the-badge)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/network)
 
+[![GitHub stars](https://img.shields.io/github/stars/judeleonard/WhatsapChat-Analyzer-App?style=for-the-badge)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/stargazers)   [![GitHub license](https://img.shields.io/github/license/judeleonard/WhatsapChat-Analyzer-App?style=for-the-badge)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/blob/master/LICENSE)
 
 ## ✅ Goal
 This App analyzes WhatsApp group chat messages or individual chat, and obviously anyone with a WhatsApp account
