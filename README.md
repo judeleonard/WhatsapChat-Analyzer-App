@@ -9,7 +9,7 @@
 ![App demo](https://github.com/judeleonard/WhatsapChat-Analyzer-App/blob/master/Demo/ezgif.com-video-to-gif.gif)
 Users can also view the app in dark mode by going to settings to select their preferred theme of choice. 
 * [PROJECT ON LINKEDIN](https://www.linkedin.com/posts/jude-ndu-78ab38175_i-developed-a-web-app-that-takes-input-of-activity-6774706251927486464-2umW)
-* [LIVE WEB APPLICATION](https://share.streamlit.io/gift-ojeabulu/whatsapchat-analyzer-app/app.py)
+* [LIVE WEB APPLICATION](https://chat-analyzer.herokuapp.com/)
 
 [![GitHub issues](https://img.shields.io/github/issues/judeleonard/WhatsapChat-Analyzer-App?style=for-the-badge)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/issues)    [![GitHub forks](https://img.shields.io/github/forks/judeleonard/WhatsapChat-Analyzer-App?style=for-the-badge)](https://github.com/judeleonard/WhatsapChat-Analyzer-App/network)
 
