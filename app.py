@@ -121,10 +121,7 @@ def main():
          df['Letter_Count'] = df['Message'].apply(lambda s : len(s))
          df['Word_Count'] = df['Message'].apply(lambda s : len(s.split(' ')))
          df['emoji'] = df["Message"].apply(fx.extract_emojis)
-
-
-
-    
+  
 
     try:
          
@@ -133,9 +130,6 @@ def main():
         
        if st.sidebar.checkbox("Show raw data", False):
           st.write(df)
-
-
-
 
 
         #=============================================================    
@@ -149,121 +143,115 @@ def main():
        if not st.sidebar.checkbox("Hide", True):
         
              if member == "All":
-                 st.markdown("## Analyze {} Members Together:".format(member))
-                 st.markdown(fx.stats(df), unsafe_allow_html=True)
-                 
-                 
-                 
-                 st.markdown('**Word Cloud:**')
-                 st.text("This will show the most used word in chat, the larger the wordsize the more often it is used.")
-                 st.pyplot(fx.word_cloud(df))
-        
-
-                 st.write('**Number of messages as times move on**') 
-                 st.plotly_chart(fx.num_messages(df))
-        
-
-                 st.write('**Day wise distribution of messsages for {}:**'.format(member))
-                 st.plotly_chart(fx.day_wise_count(df))
+                st.markdown("## Analyze {} Members Together:".format(member))
+                st.markdown(fx.stats(df), unsafe_allow_html=True)
                 
                 
-                 st.write('** Most active date:**')
-                 st.pyplot(fx.active_date(df))
+                
+                st.markdown('**Word Cloud:**')
+                st.text("This will show the most used word in chat, the larger the wordsize the more often it is used.")
+                st.pyplot(fx.word_cloud(df))
+    
 
-                 
-                 st.write("** Top 10 frequently used emojis:** :blush:")
-                 emoji = fx.popular_emoji(df)
-                 for e in emoji[:10]:
-                     st.markdown('**{}** : {}'.format(e[0], e[1]))
-                 
-                    
-                 st.write('** Visualize emoji distribution in pie chart:**')
-                 st.text('Hover on Chart to see more details')
-                 st.plotly_chart(fx.visualize_emoji(df), use_container_width=True)
+                st.write('**Number of messages as times move on**') 
+                st.plotly_chart(fx.num_messages(df))
+    
 
-                         
-                 st.write('**Most active time for Chat:**')
-                 st.pyplot(fx.active_time(df))
-                 
+                st.write('**Day wise distribution of messsages for {}:**'.format(member))
+                st.plotly_chart(fx.day_wise_count(df))
+            
+            
+                st.write('** Most active date:**')
+                st.pyplot(fx.active_date(df))
 
-                 st.write('**Chatter: Most active person in the group**')
-                 auth = df.groupby('Author').sum()
-                 auth.reset_index(inplace=True)
-                 fig = px.bar(auth, y='Author', x= 'MessageCount',color='Author', orientation='h',
-                              color_discrete_sequence=['red','green','blue','goldenrod','magenta'],title='Number of messages relative to Author'
-                              )
-                 st.plotly_chart(fig)
+                
+                st.write("** Top 10 frequently used emojis:** :blush:")
+                emoji = fx.popular_emoji(df)
+                for e in emoji[:10]:
+                    st.markdown('**{}** : {}'.format(e[0], e[1]))
+                
+                
+                st.write('** Visualize emoji distribution in pie chart:**')
+                st.text('Hover on Chart to see more details')
+                st.plotly_chart(fx.visualize_emoji(df), use_container_width=True)
+
+                        
+                st.write('**Most active time for Chat:**')
+                st.pyplot(fx.active_time(df))
+                
+
+                st.write('**Chatter: Most active person in the group**')
+                auth = df.groupby('Author').sum()
+                auth.reset_index(inplace=True)
+                fig = px.bar(auth, y='Author', x= 'MessageCount',color='Author', orientation='h',
+                            color_discrete_sequence=['red','green','blue','goldenrod','magenta'],title='Number of messages relative to Author'
+                            )
+                st.plotly_chart(fig)
+
+
+                st.markdown('#### Analyze the Overall Sentiment in the Group Message')
+                df["cleanText"] = df["Message"].apply(fx.clean_text)
+                # display sentiment scores
+                df['sentiment_scores'] = df['cleanText'].apply(fx.sentiment_scores)
+                if st.button("Show sentiment scores for group messages"):
+                    st.write("Neutral, Positive and Negative value of your speech is:")
+                    st.write(df[['Message', 'sentiment_scores']])
+                df["Sentiment"] = df["cleanText"].apply(fx.sentiment_labels)
+                st.pyplot(fx.sentiment_chart(df))
+                st.success('Done Analysing!')
 
 
              else:
-                 member_data = df[df['Author'] == member]
-                 st.markdown("## Analyse {} chat:".format(member))
-                 st.markdown(fx.stats(member_data), unsafe_allow_html=False)
+                member_data = df[df['Author'] == member]
+                st.markdown("## Analyse {} chat:".format(member))
+                st.markdown(fx.stats(member_data), unsafe_allow_html=False)
 
 
-                 st.write("** Top 10 popular emojis used by {}:**".format(member))
-                 emoji = fx.popular_emoji(member_data)
-                 for e in emoji[:10]:
-                     st.markdown('**{}** : {}'.format(e[0], e[1]))
+                st.write("** Top 10 popular emojis used by {}:**".format(member))
+                emoji = fx.popular_emoji(member_data)
+                for e in emoji[:10]:
+                    st.markdown('**{}** : {}'.format(e[0], e[1]))
 
 
-                 st.write('** Visualize emoji distribution in pie chart for {}:**'.format(member))
-                 st.plotly_chart(fx.visualize_emoji(member_data))
+                st.write('** Visualize emoji distribution in pie chart for {}:**'.format(member))
+                st.plotly_chart(fx.visualize_emoji(member_data))
 
 
-                 st.markdown('**WordCloud:**')
-                 st.text(" This will show most used words by {}.".format(member))
-                 st.pyplot(fx.word_cloud(member_data))
+                st.markdown('**WordCloud:**')
+                st.text(" This will show most used words by {}.".format(member))
+                st.pyplot(fx.word_cloud(member_data))
 
 
-                 st.write('** Most active date of {} on Whatsapp:**'.format(member))
-                 st.pyplot(fx.active_date(member_data))
+                st.write('** Most active date of {} on Whatsapp:**'.format(member))
+                st.pyplot(fx.active_date(member_data))
 
 
-                 st.write('**When {} is active for chat:**'.format(member))
-                 fx.active_time(member_data)
-                 st.pyplot(fx.active_time(member_data))
+                st.write('**When {} is active for chat:**'.format(member))
+                fx.active_time(member_data)
+                st.pyplot(fx.active_time(member_data))
 
 
-                 st.write('**Day wise distribution of messages for {}:**'.format(member))
-                 st.plotly_chart(fx.day_wise_count(member_data))
+                st.write('**Day wise distribution of messages for {}:**'.format(member))
+                st.plotly_chart(fx.day_wise_count(member_data))
 
 
-                 st.write('**Number of messages as times move on**')
-                 st.plotly_chart(fx.num_messages(member_data))
+                st.write('**Number of messages as times move on**')
+                st.plotly_chart(fx.num_messages(member_data))
 
+                st.markdown(f'#### Analyze the Sentiment Messages for {member}')
+                member_data["cleanText"] = member_data["Message"].apply(fx.clean_text)
+                 # display sentiment scores
+                member_data['sentiment_scores'] = member_data['cleanText'].apply(fx.sentiment_scores)
+                if  st.button("Show sentiment scores for group messages"):
+                    st.write("Neutral, Positive and Negative value of your speech is:")
+                    st.write(member_data[['Message', 'sentiment_scores']])
+                member_data["Sentiment"] = member_data["cleanText"].apply(fx.sentiment_labels)
+                st.pyplot(fx.sentiment_chart(member_data))
+                st.success('Done Analysing!')
 
     except Exception as e:
         print(e)
         st.write('Please upload your file (.txt file only! file limit-200MB)')
-
-
-
-
-st.sidebar.markdown(
-    """
-         ** About  Ndu Jude**
-  
-         ** Data Scientist / Physicist** 
-  
-  
-         """
-)
-
-
-st.sidebar.markdown("[![lets connect](https://forthebadge.com/images/badges/Jesus-Saves.svg)](https://www.linkedin.com/in/jude-chukwuebuka-78ab38175/)")
-st.sidebar.markdown("[![Twitter](https://forthebadge.com/images/badges/Jesus-Saves.svg)](https://www.twitter.com/JudeLeonard13/)")
-
-
-#st.sidebar.markdown("<a href="https://twitter.com/GiftOjeabulu_">
-#  <img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />
-#</a>&nbsp;&nbsp;")
-
-
-
-
-
-
 
 
 
