@@ -1,4 +1,4 @@
 workingdir
 plugins
 langconfig
-modules/__pycache__
+modules/__pycache__/*
