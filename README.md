@@ -28,7 +28,7 @@ Let me briefly walk you through on how to export your chat file.
 
 ## ✅ Insights
 The insights derived from your chat data can be done for both group wise and individual wise. such as; __total letter count__, __word count__, 
-__total messages sent to the group__, __total emojis__ and __total media sent to the group__ and as well for individual wise.
+__total messages sent to the group__, __total emojis__ and __total media sent to the group__, and __sentiment in messages__ both for group wise and individual wise.
 When a person is mostly available for chat by __date stat, time stat, weekday stat and time series messages (messages sent as time move on)__
 You can also analyse for the most used word or emoji in a chart distribution, in the group or by an individual and the most active person in the group.
 
@@ -38,4 +38,5 @@ You can also analyse for the most used word or emoji in a chart distribution, in
     * Plotly
     * Matplotlib
     * Pandas
+    * NLTK
 
